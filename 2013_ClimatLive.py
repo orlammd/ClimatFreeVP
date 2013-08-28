@@ -23,7 +23,7 @@ hook(
 run(
 	scenes = {
 # TU COPIES A PARTIR DE LA
-		1:	SceneGroup("Bab Safe", [
+		1:	SceneGroup("Intro-Items", [
 					Scene("On Air",
 						PortFilter('NanoIn') >> Discard()
 					),
@@ -32,8 +32,7 @@ run(
 					),
 				]
 			),
-# JUSQUE LA, ET TU CHANGES LE NOM DE SceneGroup ET LE NUMERO
-		2:	SceneGroup("63521", [
+		2:	SceneGroup("Baby-Malabar", [
 					Scene("On Air",
 						PortFilter('NanoIn') >> Discard()
 					),
@@ -42,7 +41,45 @@ run(
 					),
 				]
 			),
-# TU COLLES ICI
+		3:	SceneGroup("Noomi-Bhopal", [
+					Scene("On Air",
+						PortFilter('NanoIn') >> Discard()
+					),
+					Scene("Bank Select", 
+						PortFilter('NanoIn') >> Discard() 
+					),
+				]
+			),
+
+		4:	SceneGroup("BurnHBurn", [
+					Scene("On Air",
+						PortFilter('NanoIn') >> Discard()
+					),
+					Scene("Bank Select", 
+						PortFilter('NanoIn') >> Discard() 
+					),
+				]
+			),
+
+		5:	SceneGroup("Barracuda-UltraPo", [
+					Scene("On Air",
+						PortFilter('NanoIn') >> Discard()
+					),
+					Scene("Bank Select", 
+						PortFilter('NanoIn') >> Discard() 
+					),
+				]
+			),
+
+		6:	SceneGroup("63521-Surpiqure", [
+					Scene("On Air",
+						PortFilter('NanoIn') >> Discard()
+					),
+					Scene("Bank Select", 
+						PortFilter('NanoIn') >> Discard() 
+					),
+				]
+			),
 	},
 )
 
