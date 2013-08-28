@@ -32,8 +32,8 @@ class OSCCustomInterface(object):
 	    _engine.switch_scene(args[0])
 	    _engine.switch_subscene(1)
 	if _engine.current_subscene() == 1:
-    	    if args[0] < 7: # Desactivation des boutons 7, 8, 9, 10
-	        clip_number = args[0] + (_engine.current_scene()-1)*6
+    	    if args[0] < 8: # Desactivation des boutons 7, 8, 9, 10
+	        clip_number = args[0] + (_engine.current_scene()-1)*7
                 _liblo.send(9999, '/clip/select', clip_number)
                 _liblo.send(9999, '/clip/goto', 1)
 
